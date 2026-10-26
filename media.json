@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "orion",
+      "type": "image",
+      "title": "Chòm sao Orion",
+      "alt": "Chòm sao Orion nối bằng các đường mảnh, sao Betelgeuse màu cam, ba sao thẳng hàng ở giữa và tinh vân hồng bên dưới",
+      "caption": "Orion: ba sao thẳng hàng là \"dây lưng\", bên dưới là tinh vân Orion.",
+      "src": "img/tv-orion.jpg",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "ngan-ha",
+      "type": "image",
+      "title": "Dải Ngân Hà",
+      "alt": "Dải Ngân Hà sáng xanh tím vắt chéo bầu trời, có vệt bụi tối, phía dưới là đường chân trời với hàng thông",
+      "caption": "Dải Ngân Hà - cần chỗ thật tối mới thấy.",
+      "src": "img/tv-ngan-ha.jpg",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "sao-moc",
+      "type": "image",
+      "title": "Sao Mộc",
+      "alt": "Sao Mộc với các dải mây nâu trắng, Vết Đỏ Lớn và bốn vệ tinh Galilê nằm hai bên",
+      "caption": "Sao Mộc và 4 vệ tinh Galilê - ống nhòm là đủ thấy.",
+      "src": "img/tv-sao-moc.jpg",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "video",
+      "type": "video",
+      "title": "Video giới thiệu",
+      "href": "bai-viet.html#video",
+      "alt": "",
+      "caption": "Video 18 giây giới thiệu Góc Sao (xem ở trang Bài viết).",
+      "src": "video/poster.png",
+      "srcset": "",
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

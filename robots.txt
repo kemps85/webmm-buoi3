@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kemps85.github.io/webmm-buoi3/sitemap.xml
