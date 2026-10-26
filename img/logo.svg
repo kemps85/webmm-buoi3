@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" width="150" height="36" role="img" aria-labelledby="lg-t">
+  <title id="lg-t">Góc Sao</title>
+  <defs><mask id="lg-m"><rect width="48" height="48" fill="#fff"/><circle cx="33" cy="19" r="15" fill="#000"/></mask></defs>
+  <circle cx="24" cy="24" r="18" fill="#fbbf24" mask="url(#lg-m)"/>
+  <path d="M36 5l1.7 4.6L42.3 11.3l-4.6 1.7L36 17.6l-1.7-4.6L29.7 11.3l4.6-1.7z" fill="#f1f5f9"/>
+  <text x="54" y="33" font-family="system-ui,'Segoe UI',Arial,sans-serif" font-size="26" font-weight="700" fill="#f1f5f9">Góc Sao</text>
+</svg>

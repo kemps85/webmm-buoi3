@@ -1,0 +1,98 @@
+/* site.css - Góc Sao | Bảo Quý Phát 24667151 | mobile-first, một tệp dùng chung */
+:root {
+  --bg: #0b1d3a;
+  --bg2: #132a4f;
+  --fg: #f1f5f9;
+  --muted: #cbd5e1;
+  --accent: #fbbf24;
+  --line: #34507f;
+  --maxw: 1100px;
+  --narrow: 960px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 .6em; }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.4rem; margin-top: 1.6em; }
+h3 { font-size: 1.1rem; }
+p, ul, ol { margin: 0 0 1em; }
+
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: #fde68a; }
+
+.wrap { width: 100%; max-width: calc(var(--maxw) + 32px); margin: 0 auto; padding: 0 16px; }
+
+.skip {
+  position: absolute; left: 8px; top: -100px; z-index: 10;
+  background: var(--accent); color: var(--bg); padding: 8px 14px; font-weight: 700;
+}
+.skip:focus { top: 8px; }
+
+/* ---- header + menu chung ---- */
+.site-header { background: #08152b; border-bottom: 1px solid var(--line); }
+.bar { display: flex; flex-direction: column; gap: 8px; padding-top: 10px; padding-bottom: 10px; }
+.brand { display: inline-block; line-height: 0; align-self: flex-start; }
+.brand img { display: block; }
+
+.menu { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.menu a {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 44px; padding: 6px 12px;
+  color: var(--fg); text-decoration: none; border-radius: 6px;
+  border-bottom: 3px solid transparent; background: var(--bg2);
+}
+.menu a:hover { background: #1b3866; }
+[aria-current="page"] { font-weight: 700; }
+.menu a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); text-decoration: underline; text-underline-offset: 5px; }
+
+/* ---- breadcrumb ---- */
+.breadcrumb { padding: 12px 0 4px; font-size: .95rem; }
+.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px; margin: 0; padding: 0; }
+.breadcrumb li + li::before { content: "\203A"; margin-right: 6px; color: var(--muted); }
+.breadcrumb li[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---- main ---- */
+main { padding-bottom: 32px; }
+.narrow { max-width: var(--narrow); }
+.lead { font-size: 1.1rem; color: var(--muted); }
+.muted { color: var(--muted); }
+
+.btn {
+  display: inline-block; min-height: 44px; padding: 10px 20px;
+  background: var(--accent); color: var(--bg); font-weight: 700; font-size: 1rem;
+  border: 0; border-radius: 8px; text-decoration: none; cursor: pointer; font-family: inherit;
+}
+.btn:hover { background: #fde68a; color: var(--bg); }
+.btn[disabled] { opacity: .6; cursor: not-allowed; }
+
+/* ---- footer ---- */
+.site-footer { background: #08152b; border-top: 1px solid var(--line); padding: 20px 0; font-size: .95rem; color: var(--muted); }
+.site-footer p { margin: 0 0 .5em; }
+
+/* ---- form / bảng ---- */
+label { display: block; font-weight: 600; margin: 14px 0 4px; }
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+  width: 100%; min-height: 44px; padding: 8px 10px; font: inherit;
+  background: #0f2447; color: var(--fg); border: 1px solid #6b86b3; border-radius: 6px;
+}
+textarea { min-height: 110px; }
+fieldset { border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px 12px; margin: 16px 0 0; }
+legend { padding: 0 6px; font-weight: 600; }
+.check { display: flex; gap: 10px; align-items: center; font-weight: 400; margin: 8px 0 0; }
+.check input { width: 22px; height: 22px; accent-color: var(--accent); }
+.note { border-left: 4px solid var(--accent); background: var(--bg2); padding: 10px 14px; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; margin: 0 0 1em; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+th { background: var(--bg2); }

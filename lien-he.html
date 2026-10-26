@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liên hệ - Góc Sao</title>
+<meta name="description" content="Đăng ký buổi quan sát bầu trời của CLB Thiên văn sinh viên Góc Sao.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#noidung">Bỏ qua, tới nội dung chính</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="img/logo.svg" alt="Góc Sao - về trang chủ" width="150" height="36"></a>
+    <nav aria-label="Menu chính">
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="thu-vien.html">Thư viện</a></li>
+        <li><a href="bai-viet.html">Bài viết</a></li>
+        <li><a href="lien-he.html" aria-current="page">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="noidung" class="wrap narrow" tabindex="-1">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li aria-current="page">Liên hệ</li>
+    </ol>
+  </nav>
+
+  <h1>Đăng ký buổi quan sát</h1>
+  <p class="lead">Mỗi tháng một buổi, miễn phí. Mang ống nhòm nếu có, chưa có thì CLB cho mượn.</p>
+  <table>
+    <caption class="muted">Lịch dự kiến (CLB hư cấu nên lịch cũng chỉ là ví dụ)</caption>
+    <thead><tr><th scope="col">Ngày</th><th scope="col">Nội dung</th></tr></thead>
+    <tbody>
+      <tr><td>Thứ Bảy 14/11/2026</td><td>Mặt Trăng và Sao Mộc</td></tr>
+      <tr><td>Thứ Bảy 12/12/2026</td><td>Chòm sao mùa đông (Orion)</td></tr>
+      <tr><td>Thứ Bảy 09/01/2027</td><td>Chụp ảnh thiên văn bằng điện thoại</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><strong>Lưu ý:</strong> đây là form minh họa, chưa có máy chủ nhận dữ liệu. Bấm «Gửi đăng ký» chỉ tải lại trang này, không có gì được lưu hay gửi đi.</p>
+  <form action="lien-he.html" method="get">
+    <div class="form-grid">
+      <div><label for="ten">Họ và tên</label><input type="text" id="ten" name="ten" required autocomplete="name"></div>
+      <div><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+      <div><label for="sdt">Số điện thoại hoặc Zalo (không bắt buộc)</label><input type="tel" id="sdt" name="sdt" autocomplete="tel"></div>
+      <div><label for="buoi">Buổi muốn tham gia</label>
+        <select id="buoi" name="buoi">
+          <option>14/11/2026 - Mặt Trăng và Sao Mộc</option>
+          <option>12/12/2026 - Chòm sao Orion</option>
+          <option>09/01/2027 - Chụp ảnh bằng điện thoại</option>
+        </select></div>
+      <fieldset class="full">
+        <legend>Bạn đã có dụng cụ nào?</legend>
+        <label class="check"><input type="checkbox" name="dungcu" value="ongnhom"> Ống nhòm</label>
+        <label class="check"><input type="checkbox" name="dungcu" value="kinh"> Kính thiên văn</label>
+        <label class="check"><input type="checkbox" name="dungcu" value="chanmay"> Chân máy cho điện thoại</label>
+      </fieldset>
+      <div class="full"><label for="ghichu">Ghi chú</label><textarea id="ghichu" name="ghichu" rows="4"></textarea></div>
+    </div>
+    <p><button class="btn" type="submit">Gửi đăng ký</button></p>
+  </form>
+  <h2>Liên hệ trực tiếp</h2>
+  <ul>
+    <li>Email: <a href="mailto:24667151@student.iuh.edu.vn">24667151@student.iuh.edu.vn</a></li>
+    <li><a href="#">Nhóm Facebook</a> và <a href="#">nhóm Zalo</a> (link giả, chưa có nhóm thật)</li>
+  </ul>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Góc Sao</strong> - CLB Thiên văn sinh viên (CLB hư cấu, làm cho bài tập Web Multimedia, IUH).</p>
+    <p>Liên hệ: <a href="mailto:24667151@student.iuh.edu.vn">24667151@student.iuh.edu.vn</a> ·
+      <a href="#">Facebook nhóm</a> · <a href="#">Zalo nhóm</a> (hai liên kết nhóm là link giả, chưa có nhóm thật)</p>
+    <p><a href="so-do-site.html">Sơ đồ site</a> · © 2026 Bảo Quý Phát (MSSV 24667151). Ảnh, video, âm thanh tự tạo, giấy phép CC BY 4.0.</p>
+  </div>
+</footer>
+</body>
+</html>
