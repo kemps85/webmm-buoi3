@@ -32,7 +32,7 @@ p, ul, ol { margin: 0 0 1em; }
 a { color: var(--accent); text-underline-offset: 3px; }
 a:hover { color: #fde68a; }
 
-.wrap { width: 100%; max-width: calc(var(--maxw) + 32px); margin: 0 auto; padding: 0 16px; }
+.wrap { width: 100%; max-width: calc(var(--maxw) + 32px); margin: 0 auto; padding-left: 16px; padding-right: 16px; }
 
 .skip {
   position: absolute; left: 8px; top: -100px; z-index: 10;
